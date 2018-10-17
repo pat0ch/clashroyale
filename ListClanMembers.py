@@ -1,0 +1,10 @@
+#programme python
+
+import requests
+import json
+
+
+
+r2=requests.get("https://api.clashroyale.com/v1/clans/%9VYCCL/members", headers={"Accept":"application/json", "authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImYxYjI5NGMyLTFiNGEtNDMzOC1hMjMwLTIyMjA1MjczOWEyMyIsImlhdCI6MTUzNTI5NzY3MCwic3ViIjoiZGV2ZWxvcGVyL2Y0MTc4Zjg2LTc0MzAtZmE0Ni00ZTRiLTVkOGYwMjRhNGYyYSIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI5MC45MC4xMzcuMTU4Il0sInR5cGUiOiJjbGllbnQifV19.InLT1CMuAYzV3J8Q-IPk6tMi-d2qOSb73J81vT6vRQkc5jZy0A4HrRCYdUOQaTk8gikQPPjcAY5DC-QApCzN7w"}, params = {"limit":50})
+
+print(json.dumps(r2.json(), indent = 2))

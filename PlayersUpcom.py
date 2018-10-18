@@ -1,0 +1,4 @@
+import requests
+import json
+r=requests.get("https://api.clashroyale.com/v1/players/%92GR9PRV/upcomingchests", headers={"Accept":"application/json", "authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjAwNzdlMDJjLTVlZGMtNDA1Ni1hZWNhLTZjZWMwMzRiYjQ4NiIsImlhdCI6MTUzNDM0NjYyMCwic3ViIjoiZGV2ZWxvcGVyL2JlYjQ5NzYzLWNhMzMtNTllYy02MTBjLTAzZmM2MzVmN2Y1OCIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyIxOTAuMjI4LjIyMy4xMzMiXSwidHlwZSI6ImNsaWVudCJ9XX0.YAag5hP2ic3-uURi0eqUwHedL9vLaBgVa19BSbEWHdvi2hn4s1QROwqZRQOsKJMTph_G6kHgBUX2vrEmmmQ3vw"}, params = {"limit":20})
+print(json.dumps(r.json(), indent = 2))
